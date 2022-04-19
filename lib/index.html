@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Love</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class='v-align'>
+        <div class='hero-btn'>
+            <button class='btn'>
+    Dragvesti
+    </button>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+            <span class='particles-circle'></span>
+        </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script>
+        $('.hero-btn').click(function() {
+            if (!$('.hero-btn').parent().hasClass('active')) {
+                $(this).parent().stop().addClass('active');
+                setTimeout(function() {
+                    $('.hero-btn').parent().removeClass('active');
+                }, 2000);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
